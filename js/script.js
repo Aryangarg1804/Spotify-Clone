@@ -203,6 +203,13 @@ async function main() {
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
             console.log("Setting volume to ", e.target.value, "/ 100");
             currentSong.volume = parseInt(e.target.value) / 100;
+            if(currentSong.volume > 0){
+                document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("img/mute.svg","img/volume.svg");
+            }   
+
+            if(currentSong.volume == 0){
+                document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("img/volume.svg","img/mute.svg");
+            } 
         });
 
 

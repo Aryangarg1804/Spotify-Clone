@@ -19,6 +19,7 @@ body {
 }
 
 .left {
+  
   width: 25vw;
   padding: 10px;
 }
@@ -193,6 +194,9 @@ body {
 
 .playbar {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 30px;
   background-color: rgb(138, 142, 138);
   padding: 12px;
@@ -268,7 +272,7 @@ body {
   background: white;
   border-radius: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
   margin: 4px;
   cursor: pointer;
 }
@@ -351,6 +355,7 @@ body {
 
   .playbar {
     width: calc(100vw - 40px);
+    
   }
 
   .hamburger {
@@ -370,8 +375,20 @@ body {
   }
 
   .spotifyPlaylists h1 {
-    padding-left: 22px;
+    padding-left: 22px; 
   }
+
+  .cardContainer{
+    max-height: auto;
+    overflow-y: unset;
+   
+  }
+ 
+  .left{
+    position: fixed;
+    top: 0;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -391,12 +408,16 @@ body {
     padding-right: 2px;
   }
 
+
+  .play:hover{
+      top: 7rem;
+  }
  
 }
 
 @media (max-width: 510px) {
   .card {
-    width: 90vw;
+    width: 100%;
   }
 
   .cardContainer {
@@ -420,6 +441,16 @@ body {
   .header{
     height: 60px;
   }
+
+
+  .playbar{
+    right: 20px;
+  }
+
+  .left{
+    width: 100vw;
+  }
+
 
   
 }
