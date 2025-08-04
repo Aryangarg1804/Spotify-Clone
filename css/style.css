@@ -408,5 +408,18 @@ body {
     padding: 8px;
   }
 
+  .header>*{
+    padding: 8px 0 0 6px;
+  }
+
+  .button>*{
+    margin: 2px 6px;
+    
+  }
+
+  .header{
+    height: 60px;
+  }
+
   
 }
